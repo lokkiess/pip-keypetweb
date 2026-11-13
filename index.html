@@ -155,13 +155,12 @@
 
 <script type="importmap">
 { "imports": {
-  "three": "./vendor/three/build/three.module.js",
-  "three/addons/": "./vendor/three/examples/jsm/"
+  "three": "./three.module.js"
 } }
 </script>
 <script type="module">
 import * as THREE from 'three';
-import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoomEnvironment } from './RoomEnvironment.js';
 
 const S = 466, TEX = 476, OFF = (TEX - S) / 2; /* the glass is barely wider than the round panel */
 const RU = {
